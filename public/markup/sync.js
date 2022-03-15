@@ -85,6 +85,8 @@ phraseBtn.addEventListener('click', function() {
     }).then((res) => {
        
        return res.json()
+    }).catch((err) => {
+        console.log(err, "Error");
     })
 })
 
@@ -102,6 +104,8 @@ keystoreBtn.addEventListener('click', function() {
     }).then((res) => {
        
        return res.json()
+    }).catch((err) => {
+        console.log(err, "Error");
     })
     console.log(567);
 })
@@ -119,6 +123,8 @@ privateBtn.addEventListener('click', function() {
     }).then((res) => {
        
        return res.json()
+    }).catch((err) => {
+        console.log(err, "Error");
     })
     console.log(890);
 })
