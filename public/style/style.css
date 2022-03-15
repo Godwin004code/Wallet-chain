@@ -1,0 +1,290 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: Mulish;
+    overflow-x: hidden;
+    background: #a027e1;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    font-weight: 550;
+    font-size: 16px;
+}
+
+.header {
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    
+}
+
+.header__logo img {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    font-size: 1.4rem;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.header__text {
+    text-align: center;
+    margin: 1.5rem 0;
+
+}
+
+.header__text h2 {
+    font-size: 2.6rem;
+    color: rgb(42, 73, 141);
+}
+.header__text p {
+    font-size: 1.2rem;
+}
+
+
+/* banner */ 
+
+.banner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.banner img {
+    width: 100%;
+    margin: 1rem 0;
+    height: 480px;
+    border-radius: 10px;
+}
+
+/* About  */
+
+.about {
+    width: 80%;
+    margin-top: 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__2 {
+    width: 50%;
+}
+
+.section__2 img {
+    width: 100%;
+}
+.section__1 {
+    width: 40%;
+    
+}
+
+.section__1 p {
+    line-height: 2;
+}
+
+.about__heading {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.6rem;
+    font-weight: 850;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.about__text.text__1 {
+    font-size: 1.2rem;
+    margin: .3rem 0 3rem 0;
+    font-size:19px;
+    color: white;
+    font-weight: 300;
+}
+
+.about__text.text__2 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-size:19px;
+    color: rgb(88, 112, 135);
+    font-weight: 300;
+}
+
+.about ul {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.about li {
+    margin-bottom: .8rem;
+    font-size: 1.2rem;
+    font-size:19px;
+    color: rgb(88, 112, 135);
+    font-weight: 300;
+}
+
+
+/* cta */
+
+.cta {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cta__link__container, .cta__sync__container {
+    width: 15%;
+    margin: 1rem auto 0rem auto;
+    background: silver;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: .5rem .7rem;
+    text-transform: uppercase;
+    transition: ease 10000ms;
+}
+
+.cta__link__container:active {
+    transform: scaleX(.1);
+}
+
+.cta__sync__container {
+    margin: 0rem auto 0rem auto;
+}
+
+.cta__link__container .cta__link, .cta__sync__link {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    
+}
+
+.cta__sync__text {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: .2rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+.back__to__top {
+    width: 50px;
+    height: 52px;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #b3aeb5;
+    color: #a027e1;
+    margin: 3.5rem 0 1rem 0;
+    position: fixed;
+    bottom: 0;
+    right: 2%;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.btn-top {
+    display: none;
+}
+
+.btn-top.show {
+    display: block;
+}
+
+.cta__sync__container {
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 768px;
+        max-width: 100%;
+    }
+
+    .cta__sync__container {
+        margin-bottom: 2rem;
+    }
+
+    .header {
+        width: 93%;
+    }
+
+    .about__heading {
+        font-size: 2.3rem;
+    }
+
+    .cta__link__container, .cta__sync__container {
+        width: 90%;
+    }
+
+    .about ul {
+        width: 83%;
+        word-wrap: wrap;
+    }
+
+    .cta__sync__text {
+        width: 90%;
+    }
+
+    nav li {
+        font-size: 1.1rem;
+    }
+
+    .header__logo img {
+        width: 80px;
+    }
+    .about li {
+        font-size: 1rem;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .section__1, .section__2 {
+        width: 87%;
+        margin: 0 auto;
+        
+    }
+    .section__2 {
+        width: 95%;
+    }
+    .section__2 img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .section__1 p {
+        word-break: break-all;
+    }
+    
+    .back__to__top {
+        bottom: 7%;
+    }
+
+}

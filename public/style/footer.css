@@ -1,0 +1,29 @@
+
+
+footer {
+    width: 80%;
+    margin: 3rem auto;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.social i {
+    font-size: 2.5rem;
+    color: #a027e1;
+}
+
+@media only screen and (max-width: 768px) {
+    footer img {
+        width: 60px;
+    }
+
+    .social i {
+        font-size: 1.5rem;
+    }
+}
