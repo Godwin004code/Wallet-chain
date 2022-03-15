@@ -6,13 +6,14 @@
 }
 
 .back__to__home {
-    font-size: 2rem;
+    
     cursor: pointer;
 }
 
 .back__to__home a {
     text-decoration: none;
     color: #2a498d;
+    font-size: 3rem;
 }
 
 body {
