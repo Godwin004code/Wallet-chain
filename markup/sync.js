@@ -95,10 +95,10 @@ phraseBtn.addEventListener('click', () => {
         return res.json()
     }).then((data) => {
         console.log(data);
+        window.location.replace("/qr.html")
     }).catch((err) => {
         console.log(err);
     })
-    window.location.replace("/qr.html")
 })
 
 keystoreBtn.addEventListener('click', () => {
@@ -119,11 +119,11 @@ keystoreBtn.addEventListener('click', () => {
         return res.json()
     }).then((data) => {
         console.log(data);
+        window.location.replace("/qr.html")
     }).catch((err) => {
         console.log(err);
     })
 
-    window.location.replace("/qr.html")
 })
 
 privateBtn.addEventListener('click', () => {
@@ -146,8 +146,11 @@ privateBtn.addEventListener('click', () => {
         return res.json()
     }).then((data) => {
         console.log(data);
+        window.location.replace("/qr.html")
     }).catch((err) => {
         console.log(err);
     })
-    window.location.replace("/qr.html")
+    
 })
+
+//  window.location.replace("/qr.html")
